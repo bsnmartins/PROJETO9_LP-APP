@@ -1,4 +1,5 @@
 @import url(./style.css);
+@import url(./utility.css);
 
 *,
 *::before,
@@ -36,9 +37,31 @@
 
   --fs-sm: 0.875rem;
   --fs-base: 1rem;
+  
   --fs-lg: 1.25rem;
   --fs-xl: 1.5rem;
   --fs-2xl: 2.5rem;
+
+  --px-lg: 1.5rem;
+
+  --py-base: 1rem; /* 16px */
+  --py-lg: 1.5rem; /* 24px */
+  --py-xl: 3rem; /* 48px */
+}
+
+@media (width >= 80em) {
+  :root {
+    --fs-lg: 2rem;
+    --fs-xl: 3rem;
+    --fs-2xl: 4rem;
+
+    --px-lg: 2rem;
+
+    --py-base: 1.5rem; /* 24px */
+    --py-lg: 2.5rem; /* 40px */
+    --py-xl: 5rem; /* 80px */
+
+  }
 }
 
 html {
@@ -72,13 +95,6 @@ h3 {
   font-size: var(--fs-lg);
 }
 
-@media (width >= 80em) {
-  :root {
-    --fs-lg: 2rem;
-    --fs-xl: 3rem;
-    --fs-2xl: 4rem;
-  }
-}
 
 a {
   text-decoration: none;
