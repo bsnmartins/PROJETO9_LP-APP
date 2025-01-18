@@ -48,7 +48,9 @@
   --py-lg: 1.5rem; /* 24px */
   --py-xl: 3rem; /* 48px */
 }
-
+h1 {
+  font: var(--fs-lg);
+}
 @media (width >= 80em) {
   :root {
     --fs-lg: 2rem;
@@ -95,6 +97,13 @@ h3 {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+a:hover {
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 ul[role="list"]{
