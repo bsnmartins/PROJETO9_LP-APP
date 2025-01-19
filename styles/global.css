@@ -51,6 +51,11 @@
 h1 {
   font: var(--fs-lg);
 }
+img {
+  max-width: 100%;
+  display: inline-block;
+  }
+
 @media (width >= 80em) {
   :root {
     --fs-lg: 2rem;
